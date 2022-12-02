@@ -6,10 +6,10 @@ import { Auth0Provider } from '@auth0/auth0-react';
 
 ReactDOM.render(
   <Auth0Provider
-    domain='dev-bgdnygo8ok28igty.uk.auth0.com'
-    clientId='BUSzSxgxmQGGPBIUQnGU4pDFMq8SoEaY'
+    domain="dev-0ynzls7dh5xjmgl5.eu.auth0.com"
+    clientId="aSmGkT5aNHLqDtimKe8xIhN2E3rl8RWg"
     redirectUri={window.location.origin}
-    audience='https://dev-bgdnygo8ok28igty.uk.auth0.com/api/v2/'
+    audience='https://dev-0ynzls7dh5xjmgl5.eu.auth0.com/api/v2/'
     scope='read:current_user update:current_user_metadata'
   >
     <App />

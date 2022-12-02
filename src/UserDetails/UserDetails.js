@@ -17,7 +17,7 @@ function UserDetails() {
 
   useEffect(() => {
     const getUserMetadata = async () => {
-      const domain = 'dev-bgdnygo8ok28igty.uk.auth0.com';
+      const domain = 'dev-0ynzls7dh5xjmgl5.eu.auth0.com';
 
       try {
         const accessToken = await getAccessTokenSilently({
@@ -83,10 +83,3 @@ function UserDetails() {
   }
   
 export default UserDetails;
-
-// {userMetadata ? (
-//   <pre>{JSON.stringify(userMetadata, null, 2)}</pre>
-// ) : (
-//   'No user metadata defined'
-//   )}
-//   <img src={getFaveImage()} id="faveImage"/>

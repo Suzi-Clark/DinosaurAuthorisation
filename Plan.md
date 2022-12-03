@@ -17,7 +17,7 @@ MVP:
 - update the Auht0 domain and client id etc, info to link to my an application in my Auth0 account instead of partners ✅
 - style and change message on log in widget on my Auth0
 - refactor to ensure careful use of logical &&s to avoid the possibility of 0 ever being accidentally rendered - challenge myself to try to replace all of them with ternaries, switch statements or if/elseor other methods listed here https://reactjs.org/docs/conditional-rendering.html (even though some of the might be fine)
-- turn userDetails into a parent 'Profile' type component with 2 children - one to display details and one to update them - this way I only need to get the metadata once and it can be shared as state by the 2 children for reading purposes
+- refactor react components to put user metadata in App.js so it can be easily passed to MainPage, UserDetails and UpdateDetails
 - have a PUT/PATCH/POST request to update user details and add in new metadata with the UpdateDetails form (favourite colour, favourite dino, nickname)
 - limit dinosaur and colour choices with radio boxes
 - ensure the updated data shows on the userDetails

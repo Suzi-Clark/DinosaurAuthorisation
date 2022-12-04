@@ -8,6 +8,7 @@ import steggy from '../images/steggy.png';
 import tallGreen from '../images/tallgreen.png';
 import tricycle from '../images/tricycle.png';
 import { Link } from 'react-router-dom';
+import './MainPage.css';
 
 const MainPage = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -18,18 +19,18 @@ const MainPage = () => {
 
   return (
     isAuthenticated ? (
-      <div>
+      <div id='mainPage'>
         <Link to='/user'>
-          <img src={user.picture} alt={user.name} />
+        <img src={user.picture} alt={user.name} id='userImage'/>
         </Link>
         <div className="dinoImages">
-            <img src={blueDino} alt='a blue dinosaur' height='400px'/>
-            <img src={babyDino} alt='a baby dinosaur' height='400px'/>
-            <img src={orange} alt='a flying dinosaur' height='400px'/>
-            <img src={purpleDino} alt='a purple dinosaur' height='400px'/>
-            <img src={steggy} alt='a stegosaurus' height='400px'/>
-            <img src={tallGreen} alt='a tall dinosaur' height='400px'/>
-            <img src={tricycle} alt='a triceratops' height='400px'/>
+            <img src={blueDino} alt='a blue dinosaur' height='250px'/>
+            <img src={babyDino} alt='a baby dinosaur' height='250px'/>
+            <img src={orange} alt='a flying dinosaur' height='250px'/>
+            <img src={purpleDino} alt='a purple dinosaur' height='250px'/>
+            <img src={steggy} alt='a stegosaurus' height='250px'/>
+            <img src={tallGreen} alt='a tall dinosaur' height='250px'/>
+            <img src={tricycle} alt='a triceratops' height='250px'/>
         </div>
       </div>
     ) : null

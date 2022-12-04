@@ -1,7 +1,20 @@
-.App{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  };
-  
+@import url('https://fonts.googleapis.com/css?family=Nerko+One&display=swap');
+
+h1 {
+  font-family: 'Nerko One', sans-serif;
+  font-size: 58px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #faebd7;
+}
+
+#App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

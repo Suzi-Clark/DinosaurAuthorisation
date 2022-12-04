@@ -9,8 +9,8 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className='App'>
-        <h1>🦕 Welcome to the Dino App! 🦖</h1>
+      <div id='App'>
+        <h1>🦕 Dinosaur App! 🦖</h1>
         <LoginLogout />
         <Routes>
           <Route path='/' element={<MainPage />} />

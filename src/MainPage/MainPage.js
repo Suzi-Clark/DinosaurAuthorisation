@@ -17,7 +17,7 @@ const MainPage = () => {
   }
 
   return (
-    isAuthenticated && (
+    isAuthenticated ? (
       <div>
         <Link to='/user'>
           <img src={user.picture} alt={user.name} />
@@ -32,7 +32,7 @@ const MainPage = () => {
             <img src={tricycle} alt='a triceratops' height='400px'/>
         </div>
       </div>
-    )
+    ) : null
   );
 };
 export default MainPage;

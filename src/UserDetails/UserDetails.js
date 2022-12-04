@@ -61,8 +61,8 @@ function UserDetails() {
   getFaveImage()
 
   return (
-    isAuthenticated && (
-      <div className='container'>
+    isAuthenticated 
+      ? (<div className='container'>
         <div>
           <Link to='/'>
             <button id='backButton'>Back</button>
@@ -70,7 +70,8 @@ function UserDetails() {
         </div>
         <div id='UserDetails'>
           <p>Hi {user.nickname},</p>
-          <p>You told us your favourite dinosaur was: <b>{faveDino}!</b><br></br> Here is an image for you:</p>
+          <p>You told us your favourite dinosaur was: <b>{faveDino}!</b>
+          <br></br> Here is an image for you:</p>
           <img src={imageUrl} alt="your favourite dinosaur" height='100px'></img>
           <br></br>
           <p>The email address on your account is: {user.email}</p>
@@ -78,7 +79,7 @@ function UserDetails() {
           <UpdateDetails onSubmit={onSubmit} />
         </div>
       </div>
-    )
+      ) : (<p>it should not be possible to try to render this before log in</p>)
     );
   }
   

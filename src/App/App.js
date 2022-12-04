@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LoginButton from '../LoginButton/LoginButton';
-import LogoutButton from '../LogoutButton/LogoutButton';
+import LoginLogout from '../LoginLogout/LoginLogout';
 import MainPage from '../MainPage/MainPage';
 import UserDetails from '../UserDetails/UserDetails';
 import UpdateDetails from '../UpdateDetails/UpdateDetails';
@@ -12,8 +11,7 @@ function App() {
     <Router>
       <div className='App'>
         <h1>🦕 Welcome to the Dino App! 🦖</h1>
-        <LoginButton />
-        <LogoutButton />
+        <LoginLogout />
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/user' element={<UserDetails />} />

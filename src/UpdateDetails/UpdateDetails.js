@@ -16,7 +16,7 @@ function UserDetails({ onSubmit }) {
         </form>
       </div>
     ) : (
-      <p>oops</p>
+      <p>it should not be possible to try to render this before log in</p>
     )
   );
 }

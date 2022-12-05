@@ -24,13 +24,13 @@ const MainPage = () => {
         <img src={user.picture} alt={user.name} id='userImage'/>
         </Link>
         <div className="dinoImages">
-            <img src={blueDino} alt='a blue dinosaur' height='250px'/>
-            <img src={babyDino} alt='a baby dinosaur' height='250px'/>
-            <img src={orange} alt='a flying dinosaur' height='250px'/>
-            <img src={purpleDino} alt='a purple dinosaur' height='250px'/>
-            <img src={steggy} alt='a stegosaurus' height='250px'/>
-            <img src={tallGreen} alt='a tall dinosaur' height='250px'/>
-            <img src={tricycle} alt='a triceratops' height='250px'/>
+            <img className='blue' src={blueDino} alt='a blue dinosaur' height='250px'/>
+            <img className='green' src={babyDino} alt='a baby dinosaur' height='250px'/>
+            <img className='orange' src={orange} alt='a flying dinosaur' height='250px'/>
+            <img className='purple' src={purpleDino} alt='a purple dinosaur' height='250px'/>
+            <img className='orange' src={steggy} alt='a stegosaurus' height='250px'/>
+            <img className='green' src={tallGreen} alt='a tall dinosaur' height='250px'/>
+            <img className='blue' src={tricycle} alt='a triceratops' height='250px'/>
         </div>
       </div>
     ) : null

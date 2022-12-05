@@ -19,8 +19,9 @@ MVP:
 - refactor to ensure careful use of logical &&s to avoid the possibility of 0 ever being accidentally rendered - challenge myself to try to replace all of them with ternaries, switch statements or if/elseor other methods listed here https://reactjs.org/docs/conditional-rendering.html (even though some of the might be fine) ✅
 - refactor login and log out buttons into one component ✅
 - refactor and add to login and logout button css ✅
-- flexbox dinosaurs on mainpage
-- refactor react components to put user metadata in App.js so it can be easily passed to MainPage, UserDetails and UpdateDetails
+- flexbox dinosaurs on mainpage ✅
+- make UpdateDetails a child of userDetails
+- make a state held in App.js of 'favourite colour' - set this state within userDetails and pass the state to Main Page for dino rendering
 - have a PUT/PATCH/POST request to update user details and add in new metadata with the UpdateDetails form (favourite colour, favourite dino, nickname)
 - limit dinosaur and colour choices with radio boxes
 - ensure the updated data shows on the userDetails

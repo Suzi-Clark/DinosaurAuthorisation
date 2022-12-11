@@ -1,48 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { Link } from 'react-router-dom';
+
 import UpdateDetails from '../UpdateDetails/UpdateDetails';
+import useFetch from '../../hooks/useFetch';
 import './userDetails.css';
+
 import eggy from '../profileImages/eggy.png'
 import steggy from '../profileImages/steggy.png'
 import tricer from '../profileImages/tricer.png'
 
 function UserDetails() {
-  const { user, isAuthenticated, getAccessTokenSilently } = useAuth0();
-  const [userMetadata, setUserMetadata] = useState('ho');
+  const { user, isAuthenticated } = useAuth0();
+  const data = useFetch(`dev-0ynzls7dh5xjmgl5.eu.auth0.com`)
   const [faveColour, setFaveColour] = useState('grey');
-
-  useEffect(() => {
-    const getUserMetadata = async () => {
-      const domain = 'dev-0ynzls7dh5xjmgl5.eu.auth0.com';
-
-      try {
-        const accessToken = await getAccessTokenSilently({
-          audience: `https://${domain}/api/v2/`,
-          scope: 'read:current_user',
-        });
-
-        const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
-
-        const metadataResponse = await fetch(userDetailsByIdUrl, {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        });
-
-        const { user_metadata } = await metadataResponse.json();
-
-        setUserMetadata(user_metadata);
-      } catch (e) {
-        console.log(e.message);
-      }
-    };
-    
-    getUserMetadata();
-  }, [getAccessTokenSilently, user?.sub]);
-
   
-  let faveDino = userMetadata ? (userMetadata.favourite_dinosaur) : ("no favourite found");
+  console.log(data)
+
+
+  if (null === data) {
+    return <p>Still fetching data... please wait...</p>;
+  }
+  
+  let faveDino = "no favourite found";
 
   let imageUrl = "";
 

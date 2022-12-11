@@ -1,12 +1,12 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
-import blueDino from '../images/bluedino.png';
-import babyDino from '../images/babydino.png';
-import orange from '../images/orange.png';
-import purpleDino from '../images/purpledino.png';
-import steggy from '../images/steggy.png';
-import tallGreen from '../images/tallgreen.png';
-import tricycle from '../images/tricycle.png';
+import blueDino from '../../images/bluedino.png';
+import babyDino from '../../images/babydino.png';
+import orange from '../../images/orange.png';
+import purpleDino from '../../images/purpledino.png';
+import steggy from '../../images/steggy.png';
+import tallGreen from '../../images/tallgreen.png';
+import tricycle from '../../images/tricycle.png';
 import { Link } from 'react-router-dom';
 import './MainPage.css';
 

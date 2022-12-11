@@ -15,20 +15,20 @@ COMPLETED DURING FRIDAY'S HACKATHON:
 MVP:
 - Fix user image based on fave dino feature that broke right before we presented ✅
 - update the Auht0 domain and client id etc, info to link to my an application in my Auth0 account instead of partners ✅
-- style and change message on log in widget on my Auth0
 - refactor to ensure careful use of logical &&s to avoid the possibility of 0 ever being accidentally rendered - challenge myself to try to replace all of them with ternaries, switch statements or if/elseor other methods listed here https://reactjs.org/docs/conditional-rendering.html (even though some of the might be fine) ✅
 - refactor login and log out buttons into one component ✅
 - refactor and add to login and logout button css ✅
 - flexbox dinosaurs on mainpage ✅
-- make UpdateDetails a child of userDetails
-- make a state held in App.js of 'favourite colour' - set this state within userDetails and pass the state to Main Page for dino rendering
-- have a PUT/PATCH/POST request to update user details and add in new metadata with the UpdateDetails form (favourite colour, favourite dino, nickname)
-- limit dinosaur and colour choices with radio boxes
-- ensure the updated data shows on the userDetails
-- have these 2 components rendered side by side on the profile 'page'
+- make UpdateDetails a child of userDetails ✅
+- limit dinosaur and colour choices with radio boxes ✅
+- have updateDetails and userDetails components rendered side by side ✅
+
+CHANGING DINO AUTH TO DINO DIARIES...
+- refactor get request into a hook
+- post favourite colour to Auth0 as metadata
+- post nickname to Auth0 as regular data
+- 
 
 STRETCH GOALS:
-- create 2 different authority levels with secret dino images that can only be seen by 'administrator' users with higher priviliges
-- create the possibility for users to increase their access level to administrator by answering a dinosaur knowledge question?
-- improve main page CSS
+- style and change message on log in widget on my Auth0
 - only show dinosaurs in users favourite colour on main page (if they have added one)
